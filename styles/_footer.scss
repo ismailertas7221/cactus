@@ -1,0 +1,27 @@
+@import "colors";
+
+// * Footer
+
+footer {
+  background-color: $light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding-top: 20px;
+
+  & address a {
+    text-decoration: none;
+    color: $lime;
+    font-size: 20px;
+
+    @include tablet {
+      font-size: 15px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      transition: all 0.5s ease;
+    }
+  }
+}
